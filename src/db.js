@@ -8,7 +8,7 @@ let db;
 async function connectDB() {
   if (!db) {
     await client.connect();
-    db = client.db("myDatabase"); // replace with your DB name
+    db = client.db("fit-class-app");
     console.log("✅ MongoDB Connected");
   }
   return db;
